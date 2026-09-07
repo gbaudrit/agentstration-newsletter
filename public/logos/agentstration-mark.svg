@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">Agentstration</title>
+  <desc id="desc">An angular letter A surrounded by connected orbital rings.</desc>
+  <defs>
+    <linearGradient id="brand" x1="34" y1="30" x2="218" y2="228" gradientUnits="userSpaceOnUse"><stop stop-color="#1ed6e8"/><stop offset=".48" stop-color="#2584ff"/><stop offset="1" stop-color="#7957ef"/></linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <g fill="none" stroke="url(#brand)" stroke-width="3">
+    <circle cx="128" cy="128" r="116" opacity=".75"/>
+    <circle cx="128" cy="128" r="93" opacity=".5" stroke-dasharray="25 8"/>
+    <circle cx="128" cy="128" r="71" opacity=".3"/>
+  </g>
+  <g fill="#fff" stroke="url(#brand)" stroke-width="3" filter="url(#glow)">
+    <circle cx="128" cy="12" r="7"/><circle cx="228" cy="70" r="7"/><circle cx="228" cy="186" r="7"/><circle cx="128" cy="244" r="7"/><circle cx="28" cy="186" r="7"/><circle cx="28" cy="70" r="7"/>
+  </g>
+  <path fill="url(#brand)" d="M66 181 116 76c5-11 19-11 24 0l50 105-39-30-23-51-24 51-38 30Z"/>
+  <path fill="url(#brand)" opacity=".9" d="m83 190 45-37 45 37-45-19-45 19Z"/>
+</svg>

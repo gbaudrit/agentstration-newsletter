@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 180" role="img" aria-labelledby="title">
+  <title id="title">Agentstration — Agent control plane</title>
+  <defs><linearGradient id="g" x1="15" y1="15" x2="170" y2="168" gradientUnits="userSpaceOnUse"><stop stop-color="#18d2e6"/><stop offset=".5" stop-color="#2785ff"/><stop offset="1" stop-color="#7755ed"/></linearGradient></defs>
+  <path fill="url(#g)" d="M25 128 83 22c4-7 14-7 18 0l58 106-44-30-23-46-24 46-43 30Z"/><path fill="url(#g)" d="m46 139 46-35 46 35-46-18-46 18Z"/>
+  <text x="185" y="102" fill="currentColor" font-family="Arial, sans-serif" font-size="66" font-weight="600" letter-spacing="8">AGENTSTRATION</text>
+  <path d="M190 130h100M732 130h100" stroke="url(#g)" stroke-width="2"/><text x="320" y="140" fill="#3d8ef5" font-family="Arial, sans-serif" font-size="15" letter-spacing="9">AGENT CONTROL PLANE</text>
+</svg>
