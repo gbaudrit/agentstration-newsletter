@@ -100,12 +100,12 @@ solutions d’agents sans disperser leur configuration dans plusieurs outils.
 > - La planification utilise `Quartz.NET` ; le Coffre local chiffre les valeurs en
 >   AES-256-GCM.
 
-## La sécurité devient l’expérience par défaut
+## Des accès protégés pour les utilisateurs et les outils
 
-L’accès aux données applicatives nécessite désormais une authentification par
-défaut. Les surfaces publiques indispensables — état de santé, connexion et
-premier démarrage — restent accessibles, tandis que les opérations métier sont
-protégées de manière cohérente.
+Agentstration protège l’accès aux fonctions et aux données de chaque Workspace.
+Les utilisateurs retrouvent les opérations autorisées par leur rôle, tandis que
+les services nécessaires à la connexion, au premier démarrage et au suivi de
+l’état de la plateforme restent disponibles.
 
 Pour les scripts et les clients en ligne de commande, les utilisateurs peuvent
 créer des jetons d’accès personnels limités à un Workspace. Le formulaire rend
@@ -117,9 +117,9 @@ qu’une seule fois lors de sa création et peut ensuite être révoqué.
 *Un jeton d’accès personnel limité au Workspace est préparé avec une expiration et
 des permissions explicites.*
 
-La gouvernance devient ainsi plus simple : l’accès suit le rôle actuel de
-l’utilisateur, et la suppression d’une appartenance ou d’une permission retire
-également l’accès associé au jeton.
+Les mêmes règles s’appliquent ainsi aux usages interactifs et automatisés. Lorsqu’un
+rôle, une appartenance ou une permission évolue, les accès associés sont adaptés
+sans qu’il soit nécessaire de recréer les intégrations.
 
 > **Pour aller plus loin**
 >
