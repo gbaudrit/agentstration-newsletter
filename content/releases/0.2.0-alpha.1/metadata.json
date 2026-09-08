@@ -1,0 +1,27 @@
+{
+  "version": "0.2.0-alpha.1",
+  "slug": "0.2.0-alpha.1",
+  "publishedAt": "2026-09-05",
+  "prerelease": true,
+  "releaseUrl": "https://github.com/gbaudrit/agentstration/releases/tag/v0.2.0-alpha.1",
+  "repositoryUrl": "https://github.com/gbaudrit/agentstration",
+  "documentationUrl": "https://docs.agentstration.io",
+  "websiteUrl": "https://www.agentstration.io",
+  "titles": {
+    "en": "From foundation to operability",
+    "fr": "Des fondations à l’exploitabilité"
+  },
+  "summaries": {
+    "en": "A first guided tour of Agentstration’s executable foundations and the broad operability step delivered by this public alpha.",
+    "fr": "Une première visite guidée des fondations exécutables d’Agentstration et de l’importante étape d’exploitabilité franchie par cette alpha publique."
+  },
+  "heroImage": "assets/release-cover.png",
+  "heroAlt": {
+    "en": "Agentstration brand mark and wordmark",
+    "fr": "Symbole et logotype Agentstration"
+  },
+  "heroCaption": {
+    "en": "Agentstration release newsletter — Edition 1",
+    "fr": "Newsletter des versions d’Agentstration — Édition 1"
+  }
+}
