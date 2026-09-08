@@ -1,6 +1,6 @@
 # Agentstration Newsletter
 
-This repository builds the official bilingual Agentstration newsletter for `https://newsletter.agentstration.io`. It contains only public editions, public assets, and the small static-site generator used to publish them.
+This repository builds and publishes the official bilingual Agentstration newsletter at [newsletter.agentstration.io](https://newsletter.agentstration.io). It contains only public editions, public assets, and the small static-site generator used to publish them.
 
 Editorial drafts, prompts, production scripts, and communication packages remain in the private `gbaudrit/agentstration-communication` repository. Product claims must be verified against the matching published tag in `gbaudrit/agentstration` before content is copied here.
 
@@ -30,7 +30,7 @@ npm run check
 npm run serve
 ```
 
-Open `http://127.0.0.1:4173`. The generated routes currently include `/`, `/en/`, `/fr/`, and `/404.html`; release routes are created automatically when an edition is added.
+Open [http://127.0.0.1:4173](http://127.0.0.1:4173). The generated routes currently include `/`, `/en/`, `/fr/`, and `/404.html`; release routes are created automatically when an edition is added.
 
 ## Add an edition
 
@@ -68,20 +68,21 @@ The version, slug, and directory name must match. Both Markdown files must be co
 
 Run `npm run build` and `npm run check` before review. The build fails on missing fields, invalid dates, missing languages, non-HTTPS product links, or missing referenced assets. The checks also cover internal links, canonical and `hreflang` metadata, indexed pages, the sitemap, local paths, insecure URLs, orphan pages, and private-looking files in `dist/`.
 
-The first `0.2.0-alpha.1` edition is deliberately not included yet. Its editorial source and publication assets will be imported in a separate step after the private review material is explicitly made available for that work.
+No edition is published yet. Until the first edition is added, the English and French indexes display a publication-ready empty state. Editorial material and public release assets must be reviewed before they are imported from the private communication repository.
 
 ## GitHub Pages and custom domain
 
-The workflow verifies Pull Requests without deploying them. A push to `main` builds, checks, uploads only `dist/`, and deploys with the official GitHub Pages actions. It needs no custom secret.
+The production site is deployed through GitHub Pages with the custom domain `newsletter.agentstration.io`.
 
-After the publishing Pull Request is merged, an administrator must:
+The repository is currently configured as follows:
 
-1. Open **Settings → Pages** in `agentstration-newsletter`.
-2. Select **GitHub Actions** as the source.
-3. Set `newsletter.agentstration.io` as the custom domain.
-4. Verify `agentstration.io` on the GitHub account if required.
-5. Create the DNS record `CNAME newsletter gbaudrit.github.io.`.
-6. Wait for domain and certificate validation.
-7. Enable **Enforce HTTPS**.
+- GitHub Actions is the Pages build source.
+- Pull Requests run the complete build and verification jobs without deploying.
+- Pushes to `main` build, verify, upload only `dist/`, and deploy with the official GitHub Pages actions.
+- The `github-pages` environment permits deployments from `main`.
+- `public/CNAME` declares `newsletter.agentstration.io` and is copied to `dist/`.
+- DNS points the `newsletter` CNAME to `gbaudrit.github.io.`.
+- The GitHub Pages certificate is approved and **Enforce HTTPS** is enabled.
+- The workflow requires no custom secret.
 
-These settings, the DNS record, merging the Pull Request, and any LinkedIn publication remain manual actions.
+Publishing a new edition still requires a reviewed Pull Request containing both languages and all public assets. Merging that Pull Request triggers the site deployment; it does not publish anything to LinkedIn or another communication channel.
