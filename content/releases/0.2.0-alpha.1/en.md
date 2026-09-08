@@ -96,11 +96,11 @@ tools.
 > - Trigger scheduling uses `Quartz.NET`; the local Vault encrypts values with
 >   AES-256-GCM.
 
-## Security becomes the default experience
+## Protected access for users and tools
 
-Access to application data now requires authentication by default. Public health,
-sign-in, and first-run surfaces remain reachable where necessary, while business
-operations are protected consistently.
+Agentstration protects access to the capabilities and data of each Workspace.
+Users see the operations allowed by their role, while the services required for
+sign-in, first-run setup, and platform health monitoring remain available.
 
 For scripts and command-line clients, users can create personal access tokens
 limited to a selected Workspace. The form makes the token name, lifetime, and
@@ -112,8 +112,9 @@ revoked.
 *A workspace-scoped personal access token is prepared with an explicit expiry and
 permission selection.*
 
-The practical result is simpler governance: access follows the user’s current role,
-and removing a membership or permission also removes the associated token access.
+The same rules therefore apply to interactive and automated use. When a role,
+membership, or permission changes, the associated access adapts without requiring
+integrations to be recreated.
 
 > **Under the hood**
 >
