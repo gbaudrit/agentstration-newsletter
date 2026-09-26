@@ -1,0 +1,27 @@
+{
+  "version": "0.3.0-alpha.1",
+  "slug": "0.3.0-alpha.1",
+  "publishedAt": "2026-09-26",
+  "prerelease": true,
+  "releaseUrl": "https://github.com/gbaudrit/agentstration/releases/tag/v0.3.0-alpha.1",
+  "repositoryUrl": "https://github.com/gbaudrit/agentstration",
+  "documentationUrl": "https://docs.agentstration.io",
+  "websiteUrl": "https://agentstration.io",
+  "titles": {
+    "en": "From governed sources to composable execution",
+    "fr": "Des sources gouvernées à l’exécution composable"
+  },
+  "summaries": {
+    "en": "Agentstration connects explicit resource scopes, trusted distribution, composable execution, governed model capabilities, durable Console interactions, and authenticated extensions in its third public alpha.",
+    "fr": "Agentstration relie portées explicites des ressources, distribution fiable, exécution composable, capacités de modèles gouvernées, interactions durables dans la Console et extensions authentifiées dans sa troisième alpha publique."
+  },
+  "heroImage": "assets/release-cover.png",
+  "heroAlt": {
+    "en": "Agentstration newsletter cover for version 0.3.0-alpha.1, surrounded by four connected agent symbols",
+    "fr": "Couverture de la newsletter Agentstration pour la version 0.3.0-alpha.1, entourée de quatre symboles d’agents connectés"
+  },
+  "heroCaption": {
+    "en": "Agentstration release newsletter — Edition 2",
+    "fr": "Newsletter des versions d’Agentstration — Édition 2"
+  }
+}
